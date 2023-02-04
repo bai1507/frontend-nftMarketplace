@@ -4,14 +4,41 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build": "next build && next export",
+    "surge": "surge out"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.5",
+    "@moralisweb3/common-evm-utils": "^2.12.0",
     "@next/font": "13.1.5",
+    "graphql": "^16.6.0",
+    "moralis": "^2.12.0",
+    "moralis-v1": "^1.12.0",
     "next": "13.1.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-moralis": "^1.4.2",
+    "web3uikit": "^1.0.4",
+    "react-scripts": "4.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "dotenv": "^16.0.3",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

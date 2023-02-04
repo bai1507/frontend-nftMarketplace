@@ -1,5 +1,12 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+1. 首页
+    1. 展示最近的NFT列表
+        1. 如果你拥有NFT，你能更新这个列表
+        2. 如果没有拥有，你能够购买这个列表中的NFT
+2. 买卖页：
+    1. 你能展示你的NFT在商场中
 
+
+ 
 ## Getting Started
 
 First, run the development server:
