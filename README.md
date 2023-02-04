@@ -1,3 +1,4 @@
+## 部署 http://netmarketplace.surge.sh/
 1. 首页
     1. 展示最近的NFT列表
         1. 如果你拥有NFT，你能更新这个列表
@@ -10,13 +11,20 @@
 ## Getting Started
 
 First, run the development server:
-
+```bash
+#先安装环境
+yarn
+```
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
+
+#添加功能完成后，可以直接部署到线上surge
+yarn build
+yarn surge
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -30,16 +38,12 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
+mint:我写的一个简单NFT页面进行挖矿，挖矿成功会在右上角直接提示tokenID,合约地址是：0xCed1978724467B7f97bCa576f3131aA91C6093De
 
-To learn more about Next.js, take a look at the following resources:
+sell-nft:销售你的NFT，需要地址和tokenId即可在该商城进行销售
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+user:查看用户在该商城的NFT，可以在此处获取你卖出的金额
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+index:首页查看所有人上架的NFT。
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
